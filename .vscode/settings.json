@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "string": "cpp",
+        "lvgl.h": "c",
+        "functional": "cpp",
+        "ui.h": "c",
+        "arduino.h": "c",
+        "lv_obj.h": "c",
+        "main.h": "c",
+        "random": "cpp"
+    }
+}
