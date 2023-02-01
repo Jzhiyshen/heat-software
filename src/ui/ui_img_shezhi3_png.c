@@ -1,5 +1,5 @@
 // SquareLine LVGL GENERATED FILE
-// EDITOR VERSION: SquareLine Studio 1.1.1
+// EDITOR VERSION: SquareLine Studio 1.2.0
 // LVGL VERSION: 8.3.3
 // PROJECT: heat
 

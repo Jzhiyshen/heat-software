@@ -1,5 +1,5 @@
 // SquareLine LVGL GENERATED FILE
-// EDITOR VERSION: SquareLine Studio 1.1.1
+// EDITOR VERSION: SquareLine Studio 1.2.0
 // LVGL VERSION: 8.3.3
 // PROJECT: heat
 
@@ -75,8 +75,19 @@ LV_IMG_DECLARE(ui_img_fanhui_png);    // assets\fanhui.png
 
 LV_FONT_DECLARE(ui_font_AutoFontCn18);
 LV_FONT_DECLARE(ui_font_AutoFontCn18B);
+LV_FONT_DECLARE(ui_font_AutoFontCn20);
+LV_FONT_DECLARE(ui_font_AutoFontCn20B);
+LV_FONT_DECLARE(ui_font_AutoFontCn24);
+LV_FONT_DECLARE(ui_font_AutoFontCn24B);
 LV_FONT_DECLARE(ui_font_AutoFontCn30);
 LV_FONT_DECLARE(ui_font_AutoFontCn30B);
+LV_FONT_DECLARE(ui_font_AutoFontCn32);
+LV_FONT_DECLARE(ui_font_AutoFontCn32B);
+LV_FONT_DECLARE(ui_font_AutoFontCn36);
+LV_FONT_DECLARE(ui_font_AutoFontCn36B);
+LV_FONT_DECLARE(ui_font_AutoFontCn40);
+LV_FONT_DECLARE(ui_font_AutoFontCn40B);
+LV_FONT_DECLARE(ui_font_AutoFontCn60B);
 
 
 void ui_init(void);

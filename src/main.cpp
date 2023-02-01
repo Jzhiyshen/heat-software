@@ -116,7 +116,7 @@ void tem_control_loop()
         }
     }else{
         digitalWrite(HEAT_PIN, LOW);
-        if(tem > 45){
+        if(tem + 2 > 45){
             digitalWrite(41, HIGH);
             digitalWrite(42, HIGH);
             lv_label_set_text(ui_mode, "冷却");
@@ -135,19 +135,19 @@ void tem_control_loop()
     if(((int)tem) != lastTem){
         lastTem = (int)tem;
         if(tem <= 45){
-            lv_obj_set_style_bg_color(ui_Screen1_Bar1, lv_color_hex(0x3981ff), LV_PART_INDICATOR | LV_STATE_DEFAULT);
+            lv_obj_set_style_bg_color(ui_Screen1_Bar1, lv_color_hex(0x3981ff), LV_PART_MAIN | LV_STATE_DEFAULT);
         }
         if(tem > 45){
-            lv_obj_set_style_bg_color(ui_Screen1_Bar1, lv_color_hex(0xf08c56), LV_PART_INDICATOR | LV_STATE_DEFAULT);
+            lv_obj_set_style_bg_color(ui_Screen1_Bar1, lv_color_hex(0xf08c56), LV_PART_MAIN | LV_STATE_DEFAULT);
         }
         if(tem > 65){
-            lv_obj_set_style_bg_color(ui_Screen1_Bar1, lv_color_hex(0xf46e25), LV_PART_INDICATOR | LV_STATE_DEFAULT);   
+            lv_obj_set_style_bg_color(ui_Screen1_Bar1, lv_color_hex(0xf46e25), LV_PART_MAIN | LV_STATE_DEFAULT);   
         }
         if(tem > 90){
-            lv_obj_set_style_bg_color(ui_Screen1_Bar1, lv_color_hex(0xf44d25), LV_PART_INDICATOR | LV_STATE_DEFAULT);   
+            lv_obj_set_style_bg_color(ui_Screen1_Bar1, lv_color_hex(0xf44d25), LV_PART_MAIN | LV_STATE_DEFAULT);   
         }
         if(tem > 120){
-            lv_obj_set_style_bg_color(ui_Screen1_Bar1, lv_color_hex(0xf52f00), LV_PART_INDICATOR | LV_STATE_DEFAULT);   
+            lv_obj_set_style_bg_color(ui_Screen1_Bar1, lv_color_hex(0xf52f00), LV_PART_MAIN | LV_STATE_DEFAULT);   
         }
     }
 }

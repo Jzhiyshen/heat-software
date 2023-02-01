@@ -1,5 +1,5 @@
 // SquareLine LVGL GENERATED FILE
-// EDITOR VERSION: SquareLine Studio 1.1.1
+// EDITOR VERSION: SquareLine Studio 1.2.0
 // LVGL VERSION: 8.3.3
 // PROJECT: heat
 
@@ -240,16 +240,15 @@ void ui_ScreenMain_screen_init(void)
     ui_ScreenMain = lv_obj_create(NULL);
     lv_obj_clear_flag(ui_ScreenMain, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
-    ui_Screen1_Bar1 = lv_bar_create(ui_ScreenMain);
-    lv_bar_set_value(ui_Screen1_Bar1, 100, LV_ANIM_OFF);
-    lv_obj_set_width(ui_Screen1_Bar1, 584);
-    lv_obj_set_height(ui_Screen1_Bar1, 235);
-    lv_obj_set_x(ui_Screen1_Bar1, 0);
-    lv_obj_set_y(ui_Screen1_Bar1, -95);
+    ui_Screen1_Bar1 = lv_obj_create(ui_ScreenMain);
+    lv_obj_set_width(ui_Screen1_Bar1, 259);
+    lv_obj_set_height(ui_Screen1_Bar1, 166);
+    lv_obj_set_x(ui_Screen1_Bar1, -2);
+    lv_obj_set_y(ui_Screen1_Bar1, -59);
     lv_obj_set_align(ui_Screen1_Bar1, LV_ALIGN_CENTER);
-
-    lv_obj_set_style_bg_color(ui_Screen1_Bar1, lv_color_hex(0x3982FF), LV_PART_INDICATOR | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_opa(ui_Screen1_Bar1, 255, LV_PART_INDICATOR | LV_STATE_DEFAULT);
+    lv_obj_clear_flag(ui_Screen1_Bar1, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+    lv_obj_set_style_bg_color(ui_Screen1_Bar1, lv_color_hex(0x2095F6), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_opa(ui_Screen1_Bar1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_lab1 = lv_label_create(ui_ScreenMain);
     lv_obj_set_width(ui_lab1, LV_SIZE_CONTENT);   /// 1
